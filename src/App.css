@@ -1,0 +1,28 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb((228), 228, 228);
+}
+
+.post {
+  border: 1px solid black;
+  height: 300px;
+  width: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Newpost{
+  align-items: center; 
+  width: 1080px;
+  background-color: white;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-bottom: 10px;
+  
+  
+}
