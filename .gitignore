@@ -10,7 +10,20 @@
 
 # production
 /build
-
+/public
+README.md
+package-lock.json
+package.json
+src/App.css
+/src/App.js
+/src/App.test.js
+/src/LikeButton.js
+/src/Post.js
+/src/index.css
+/src/index.js
+/src/logo.svg
+/src/reportWebVitals.js
+/src/setupTests.js
 # misc
 .DS_Store
 .env.local
