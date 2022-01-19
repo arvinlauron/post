@@ -22,19 +22,23 @@ function App(){
     }
     return(
         <div>
+           
+         <div className='Newpost'>
+            <form onSubmit={handleSubmit}>
+                <input type="text" name = "name" value={name} placeholder='Enter a name' onChange={e=>SetName(e.target.value)} />
+                <br></br>
+                <textarea name="content" value={content} placeholder='Enter a post' onChange={e=>SetContent(e.target.value)} >Enter comment   here</textarea>
+                <br></br>
+                <button>Post</button>
+            </form>
+            </div>
+
             <div className='app'>
             {
                 list.map((post) =>(
                     <Post key={post.key} name={post.name} content={post.content} likes={post.likes}  />
             ))}
          </div>
-         <div className='Newpost'>
-            <form onSubmit={handleSubmit}>
-                <input type="text" name = "name" value={name} placeholder='Enter a name' onChange={e=>SetName(e.target.value)}  />
-                <input type="text" name = "content" value={content} placeholder='Enter a post' onChange={e=>SetContent(e.target.value)}  />
-                <button>Post</button>
-            </form>
-            </div>
         </div>
     )
 }

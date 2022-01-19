@@ -15,16 +15,15 @@ function App() {
   );
 
     return (
-      <div>
+      <div className='container'>
+         <NewPost />
         <div className='app'>
           {posts.map(post => (
             <Post key={post.key} name={post.name} content={post.content} likes={post.likes}  />
           ))}
            
-        </div>
-        <div className='app'>
-          <NewPost />
-        </div>       
+        </div> 
+         
       </div>
     );
     
