@@ -6,6 +6,7 @@ function Post (props) {
     const{content} = props
     const{likes} = props
     
+    
         return (
                 <div className='post'>
                     <h3>{name}</h3>

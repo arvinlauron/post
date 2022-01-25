@@ -23,13 +23,13 @@ function App(){
     return(
         <div>
            
-         <div className='Newpost'>
+         <div>
             <form onSubmit={handleSubmit}>
                 <input type="text" name = "name" value={name} placeholder='Enter a name' onChange={e=>SetName(e.target.value)} />
                 <br></br>
                 <textarea name="content" value={content} placeholder='Enter a post' onChange={e=>SetContent(e.target.value)} >Enter comment   here</textarea>
                 <br></br>
-                <button>Post</button>
+                <button className='submitButton'>Post</button>
             </form>
             </div>
 
